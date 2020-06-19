@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.rnvideochat"
+        applicationId "com.peekaboo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

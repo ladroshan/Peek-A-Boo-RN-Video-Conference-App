@@ -1,4 +1,4 @@
-package com.rnvideochat;
+package com.peekaboo;
 import android.content.Intent;
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;

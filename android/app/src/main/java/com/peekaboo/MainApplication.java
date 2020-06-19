@@ -1,4 +1,4 @@
-package com.rnvideochat;
+package com.peekaboo;
 
 import android.app.Application;
 import android.content.Context;
