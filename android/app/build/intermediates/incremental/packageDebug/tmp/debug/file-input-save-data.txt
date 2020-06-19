@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Jun 19 15:03:10 IST 2020
+#Fri Jun 19 16:52:08 IST 2020
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=C\:\\MediaFiles\\Video Calling Android cordova\\RNVideoChat\\android\\app\\build\\intermediates\\merged_assets\\debug\\out

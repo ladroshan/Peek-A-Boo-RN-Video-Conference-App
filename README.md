@@ -14,7 +14,11 @@ Project contains the following features implemented:
 
 ## Screenshots
 
-<kbd><img alt="Video Chat, Login Screen" src="assets/screenshots/login.png" width="200" /></kbd> <kbd><img alt="Video chat, select users" src="assets/screenshots/users.png" width="200" /></kbd> <kbd><img alt="Video chat Permissions" src="assets/screenshots/permission.png" width="200" /></kbd> <kbd><img alt="Video chat Calling" src="assets/screenshots/calling.png" width="200" /></kbd>
+<kbd><img alt="Video Chat, Login Screen" src="assets/screenshots/login.png" width="200" /></kbd>
+<kbd><img alt="Video chat, select users" src="assets/screenshots/users.png" width="200" /></kbd>
+<br />
+<kbd><img alt="Video chat Permissions" src="assets/screenshots/permission.png" width="200" /></kbd>
+<kbd><img alt="Video chat Calling" src="assets/screenshots/calling.png" width="200" /></kbd>
 
 ## Quick start and develop
 
@@ -53,28 +57,28 @@ To make the sample works for your own app, please do the following:
         id: 1,
         name: "User1",
         login: "videouser1",
-        password: "videouser1",
+        password: "***",
         color: "#34ad86"
       },
       {
         id: 2,
         name: "User2",
         login: "videouser2",
-        password: "videouser2",
+        password: "***",
         color: "#077988"
       },
       {
         id: 3,
         name: "User3",
         login: "videouser3",
-        password: "videouser3",
+        password: "***",
         color: "#13aaae"
       },
       {
         id: 4,
         name: "User4",
         login: "videouser4",
-        password: "videouser4",
+        password: "***",
         color: "#056a96"
       }
     ];
@@ -82,7 +86,7 @@ To make the sample works for your own app, please do the following:
 
 3. Install node modules - `npm install`
 4. Run `npm run ios` or `npm run android`.
-5. Build `npm build ios` or `npm build android`.
+5. Build `npm build ios` or `npm run android release`.
 
 Created with the help of ConnectyCube React Native app code samples.
 
