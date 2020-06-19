@@ -1,5 +1,5 @@
 # Peek-A-Boo
-## - A Video Conferencing App.
+## -- A Video Conferencing App.
 
 This is Video Conference Calling app built using React Native and [ConnectyCube](https://connectycube.com) Open Source Apis.
 
@@ -14,7 +14,7 @@ Project contains the following features implemented:
 
 ## Screenshots
 
-<kbd><img alt="Video chat code sample, Login Screen" src="https://developers.connectycube.com/docs/_images/code_samples/reactnative/reactnative_codesample_video_login.PNG" width="200" /></kbd> <kbd><img alt="Video chat, select users" src="https://developers.connectycube.com/docs/_images/code_samples/reactnative/reactnative_codesample_video_select_users.PNG" width="200" /></kbd> <kbd><img alt="Video chat Screen" src="https://developers.connectycube.com/docs/_images/code_samples/reactnative/reactnative_codesample_video_video.PNG" width="200" /></kbd>
+<kbd><img alt="Video Chat, Login Screen" src="assets/screenshots/login.png" width="200" /></kbd> <kbd><img alt="Video chat, select users" src="assets/screenshots/users.png" width="200" /></kbd> <kbd><img alt="Video chat Permissions" src="assets/screenshots/permission.png" width="200" /></kbd> <kbd><img alt="Video chat Calling" src="assets/screenshots/calling.png" width="200" /></kbd>
 
 ## Quick start and develop
 
@@ -86,4 +86,4 @@ To make the sample works for your own app, please do the following:
 
 Created with the help of ConnectyCube React Native app code samples.
 
-# Author: [Pavan Aditya M S](https://pavanaditya.com)
+# Developer: [Pavan Aditya M S](https://pavanaditya.com "Know the Developer")

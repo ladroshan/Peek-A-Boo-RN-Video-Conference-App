@@ -15,28 +15,28 @@ export const users = [
     name: 'Pavan',
     login: 'msp.aditya99@gmail.com',
     password: 'password1',
-    color: '#177988',
+    color: '#177987',
   },
   {
     id: 1547929,
     name: 'Aditya',
     login: 'msp.aditya10@gmail.com',
     password: 'password1',
-    color: '#3aad86',
+    color: '#3aad85',
   },
   {
     id: 1551166,
     name: 'Asish',
     login: 'msd.asish@gmail.com',
     password: 'password1',
-    color: '#53aaf1',
+    color: '#53aaf0',
   },
   {
     id: 1551157,
     name: 'Guest',
     login: 'bhallaladhevudu@gmail.com',
     password: 'password1',
-    color: '#f35a16',
+    color: '#f35a15',
   },
 ];
 
