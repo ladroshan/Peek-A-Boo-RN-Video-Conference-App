@@ -5,7 +5,7 @@ export default [
     authSecret: 'rXp-kU87nUddy6g',
   },
   {
-    debug: {mode: 1},
+    debug: { mode: 1 },
   },
 ];
 

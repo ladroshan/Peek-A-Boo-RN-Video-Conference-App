@@ -8,6 +8,5 @@ export default class App extends Component {
 
     AuthService.init();
   }
-
   render = () => <Navigator />;
 }

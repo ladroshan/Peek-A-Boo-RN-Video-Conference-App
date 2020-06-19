@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
-import {CallService} from '../../services';
+import { CallService } from '../../services';
 
 export default ({
   isActiveSelect,
@@ -61,5 +61,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     margin: 5,
   }),
-  userName: {color: 'white', fontSize: 20},
+  userName: { color: 'white', fontSize: 20 },
 });

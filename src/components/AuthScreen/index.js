@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 import {
   StyleSheet,
   SafeAreaView,
@@ -9,22 +9,22 @@ import {
   ActivityIndicator,
   TouchableOpacity,
 } from 'react-native';
-import {AuthService} from '../../services';
-import {users} from '../../config';
+import { AuthService } from '../../services';
+import { users } from '../../config';
 
 export default class AuthScreen extends PureComponent {
-  state = {isLogging: false};
+  state = { isLogging: false };
 
-  setIsLogging = isLogging => this.setState({isLogging});
+  setIsLogging = isLogging => this.setState({ isLogging });
 
   login = currentUser => {
     const _onSuccessLogin = () => {
-      const {navigation} = this.props;
+      const { navigation } = this.props;
       const opponentsIds = users
         .filter(opponent => opponent.id !== currentUser.id)
         .map(opponent => opponent.id);
 
-      navigation.push('VideoScreen', {opponentsIds});
+      navigation.push('VideoScreen', { opponentsIds });
     };
 
     const _onFailLogin = (error = {}) => {
@@ -39,8 +39,8 @@ export default class AuthScreen extends PureComponent {
       .then(() => this.setIsLogging(false));
   };
 
-  render() {
-    const {isLogging} = this.state;
+  render () {
+    const { isLogging } = this.state;
     const logoSrc = require('../../../assets/logo.png');
 
     return (
@@ -52,7 +52,7 @@ export default class AuthScreen extends PureComponent {
             style={[
               styles.f1,
               styles.centeredChildren,
-              {flexDirection: 'row'},
+              { flexDirection: 'row' },
             ]}>
             {isLogging && <Text>Connecting... </Text>}
             {!isLogging && <Text style={[styles.titleText]}>Peek-A-Boo</Text>}

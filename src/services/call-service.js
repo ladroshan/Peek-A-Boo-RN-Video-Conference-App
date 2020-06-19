@@ -31,7 +31,7 @@ export default class CallService {
     return user;
   };
 
-  setMediaDevices() {
+  setMediaDevices () {
     return ConnectyCube.videochat.getMediaDevices().then(mediaDevices => {
       this.mediaDevices = mediaDevices;
     });
@@ -97,7 +97,7 @@ export default class CallService {
 
   setSpeakerphoneOn = flag => InCallManager.setSpeakerphoneOn(flag);
 
-  processOnUserNotAnswerListener(userId) {
+  processOnUserNotAnswerListener (userId) {
     return new Promise((resolve, reject) => {
       if (!this._session) {
         reject();
@@ -112,7 +112,7 @@ export default class CallService {
     });
   }
 
-  processOnCallListener(session) {
+  processOnCallListener (session) {
     return new Promise((resolve, reject) => {
       if (session.initiatorID === session.currentUserID) {
         reject();
@@ -129,7 +129,7 @@ export default class CallService {
     });
   }
 
-  processOnAcceptCallListener(session, userId, extension = {}) {
+  processOnAcceptCallListener (session, userId, extension = {}) {
     return new Promise((resolve, reject) => {
       if (userId === session.currentUserID) {
         this._session = null;
@@ -148,7 +148,7 @@ export default class CallService {
     });
   }
 
-  processOnRejectCallListener(session, userId, extension = {}) {
+  processOnRejectCallListener (session, userId, extension = {}) {
     return new Promise((resolve, reject) => {
       if (userId === session.currentUserID) {
         this._session = null;
@@ -168,7 +168,7 @@ export default class CallService {
     });
   }
 
-  processOnStopCallListener(userId, isInitiator) {
+  processOnStopCallListener (userId, isInitiator) {
     return new Promise((resolve, reject) => {
       this.stopSounds();
 
