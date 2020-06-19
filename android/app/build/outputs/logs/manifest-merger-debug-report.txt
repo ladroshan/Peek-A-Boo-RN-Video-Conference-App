@@ -67,9 +67,9 @@ INJECTED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\ap
 INJECTED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 INJECTED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:2:5-30
+		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:2:5-27
 		INJECTED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:2:5-30
+		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:2:5-27
 		INJECTED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml
@@ -165,7 +165,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\M1
 	android:name
 		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:19:7-38
 		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:19:7-38
-activity#com.rnvideochat.MainActivity
+activity#com.peekaboo.MainActivity
 ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:26:7-33:18
 	android:theme
 		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:28:9-43
@@ -181,7 +181,7 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:31:13-73
 	android:name
 		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:31:23-70
-activity#com.rnvideochat.AppMainActivity
+activity#com.peekaboo.AppMainActivity
 ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:35:7-41:18
 	android:label
 		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:37:9-41

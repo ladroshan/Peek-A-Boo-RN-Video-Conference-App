@@ -1,4 +1,4 @@
-com.rnvideochat
+com.peekaboo
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1318,6 +1318,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable assets_logo
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1356,6 +1357,8 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable node_modules_reactnavigationstack_lib_module_vendor_views_assets_backicon
+drawable node_modules_reactnavigationstack_lib_module_vendor_views_assets_backiconmask
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1832,6 +1835,12 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw app
+raw assets_sounds_calling
+raw assets_sounds_dialing
+raw assets_sounds_end_call
+raw node_modules_reactnativeconnectycube_package
+raw node_modules_reactnativevectoricons_glyphmaps_materialicons
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
