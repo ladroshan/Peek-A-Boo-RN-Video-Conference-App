@@ -186,7 +186,7 @@ ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\s
 	android:label
 		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:37:9-41
 	android:windowSoftInputMode
-		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:40:9-51
+		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:40:9-48
 	android:configChanges
 		ADDED from C:\MediaFiles\Video Calling Android cordova\RNVideoChat\android\app\src\main\AndroidManifest.xml:39:9-79
 	android:theme
