@@ -16,7 +16,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@react-native-community/async-storage": "1.7.1",
+    "@react-native-community/async-storage": "^1.7.1",
     "@react-native-community/masked-view": "^0.1.6",
     "expo": "^37.0.12",
     "react": "16.9.0",
@@ -30,7 +30,7 @@
     "react-native-screens": "^2.0.0-beta.1",
     "react-native-simple-toast": "^1.0.0",
     "react-native-sound": "^0.11.0",
-    "react-native-vector-icons": "6.6.0",
+    "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^2.0.16"
   },
