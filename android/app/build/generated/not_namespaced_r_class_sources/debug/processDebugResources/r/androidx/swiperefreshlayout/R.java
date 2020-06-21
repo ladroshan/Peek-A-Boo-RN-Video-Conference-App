@@ -170,13 +170,13 @@ public final class R {
     public static final class style {
         private style() {}
 
-        public static final int TextAppearance_Compat_Notification = 0x7f100161;
-        public static final int TextAppearance_Compat_Notification_Info = 0x7f100162;
-        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f100164;
-        public static final int TextAppearance_Compat_Notification_Time = 0x7f100167;
-        public static final int TextAppearance_Compat_Notification_Title = 0x7f100169;
-        public static final int Widget_Compat_NotificationActionContainer = 0x7f10024f;
-        public static final int Widget_Compat_NotificationActionText = 0x7f100250;
+        public static final int TextAppearance_Compat_Notification = 0x7f100164;
+        public static final int TextAppearance_Compat_Notification_Info = 0x7f100165;
+        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f100167;
+        public static final int TextAppearance_Compat_Notification_Time = 0x7f10016a;
+        public static final int TextAppearance_Compat_Notification_Title = 0x7f10016c;
+        public static final int Widget_Compat_NotificationActionContainer = 0x7f100252;
+        public static final int Widget_Compat_NotificationActionText = 0x7f100253;
     }
     public static final class styleable {
         private styleable() {}
