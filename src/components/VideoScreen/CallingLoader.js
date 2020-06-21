@@ -1,7 +1,7 @@
 import React from 'react';
-import { ActivityIndicator, View, Text, StyleSheet } from 'react-native';
+import {ActivityIndicator, View, Text, StyleSheet} from 'react-native';
 
-export default ({ name }) => (
+export default ({name}) => (
   <View style={styles.container}>
     <View style={styles.info}>
       <Text style={styles.text}>{name}</Text>
@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFill,
     flex: 1,
     justifyContent: 'center',
+    backgroundColor: '#001a15',
   },
   info: {
     flexDirection: 'row',

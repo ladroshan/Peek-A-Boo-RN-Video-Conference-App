@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { RTCView } from 'react-native-connectycube';
-import { CallService } from '../../services';
+import {View, StyleSheet} from 'react-native';
+import {RTCView} from 'react-native-connectycube';
+import {CallService} from '../../services';
 import CallingLoader from './CallingLoader';
 
-export default ({ streams }) => {
-  const RTCViewRendered = ({ userId, stream }) => {
+export default ({streams}) => {
+  const RTCViewRendered = ({userId, stream}) => {
     if (stream) {
       return (
         <RTCView
@@ -111,7 +111,7 @@ export default ({ streams }) => {
 const styles = StyleSheet.create({
   blackView: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: '#001a15',
   },
   inColumn: {
     flex: 1,

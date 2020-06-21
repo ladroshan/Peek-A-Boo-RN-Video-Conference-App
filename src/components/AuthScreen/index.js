@@ -315,14 +315,14 @@ Password: Min 8 Characters`,
               </View>
               <View style={[styles.loginBtns]}>
                 <TouchableOpacity onPress={() => this.login()}>
-                  <View style={[styles.authBtn('#f35a15')]}>
+                  <View style={[styles.authBtn('#177987')]}>
                     <Text style={styles.authBtnText}>{'Login'}</Text>
                   </View>
                 </TouchableOpacity>
                 <TouchableOpacity
                   onPress={() => this.setState({view: 'buttons'})}>
-                  <View style={[styles.authBtn('#177987')]}>
-                    <Text style={styles.authBtnText}>{'Go Back'}</Text>
+                  <View style={[styles.authBtn('#f35a15')]}>
+                    <Text style={styles.authBtnText}>{'Cancel'}</Text>
                   </View>
                 </TouchableOpacity>
               </View>
@@ -427,7 +427,7 @@ Password: Min 8 Characters`,
                 <TouchableOpacity onPress={() => this.register()}>
                   <View
                     style={[
-                      styles.authBtn('#f35a15'),
+                      styles.authBtn('#177987'),
                       styles.centeredChildren,
                     ]}>
                     <Text style={styles.authBtnText}>{'Signup'}</Text>
@@ -437,10 +437,10 @@ Password: Min 8 Characters`,
                   onPress={() => this.setState({view: 'buttons'})}>
                   <View
                     style={[
-                      styles.authBtn('#177987'),
+                      styles.authBtn('#f35a15'),
                       styles.centeredChildren,
                     ]}>
-                    <Text style={styles.authBtnText}>{'Go Back'}</Text>
+                    <Text style={styles.authBtnText}>{'Cancel'}</Text>
                   </View>
                 </TouchableOpacity>
               </View>
@@ -461,7 +461,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   container: {
-    backgroundColor: 'white',
+    backgroundColor: '#001a15',
   },
   logoImg: {
     width: '90%',
@@ -486,7 +486,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   titleText: {
-    color: 'black',
+    color: 'white',
     fontSize: 40,
     fontWeight: '700',
     fontStyle: 'italic',

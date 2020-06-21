@@ -183,6 +183,7 @@ const styles = StyleSheet.create({
     flex: 1,
     ...StyleSheet.absoluteFill,
     // justifyContent: 'center',
+    backgroundColor: '#001a15',
     alignItems: 'center',
     marginTop: 25,
   },
