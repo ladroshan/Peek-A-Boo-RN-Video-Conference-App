@@ -45,6 +45,12 @@ export default class AuthService {
     });
   };
 
+  register = async user => {
+    await ConnectyCube.createSession();
+    await ConnectyCube.users.signup(user);
+    return this.login(user);
+  };
+
   logout = () => {
     ConnectyCube.chat.disconnect();
     ConnectyCube.destroySession();

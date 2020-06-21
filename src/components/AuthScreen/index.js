@@ -12,6 +12,7 @@ import {
   TextInput,
 } from 'react-native';
 import {AuthService} from '../../services';
+import {showAlert} from '../../helpers/Alert';
 
 export default class AuthScreen extends PureComponent {
   state = {
@@ -26,8 +27,11 @@ export default class AuthScreen extends PureComponent {
   setIsLogging = isLogging => this.setState({isLogging});
 
   guestLogin = () => {
-    alert(`Someother device is currently using Guest Login.
-Please Login/SignUp directly to proceed further.`);
+    showAlert(
+      `Someother device is currently using Guest Login.
+Please Login/SignUp directly to proceed further.`,
+      'Error',
+    );
   };
 
   // login = currentUser => {
@@ -64,11 +68,11 @@ Please Login/SignUp directly to proceed further.`);
       this.state.login.password.length < 8
     ) {
       if (!this.validLoginName(this.state.login.loginName)) {
-        alert('Enter A Valid Login Name');
+        showAlert('Enter A Valid Login Name', 'Invalid Input');
       } else if (this.state.login.password.length < 8) {
-        alert('Enter A Valid Password');
+        showAlert('Enter A Valid Password', 'Invalid Input');
       } else {
-        alert('Enter A Valid Login Name and Password');
+        showAlert('Enter A Valid Login Name and Password', 'Invalid Input');
       }
     } else {
       // alert(this.state.login.loginName + ' -- ' + this.state.login.password);
@@ -86,13 +90,14 @@ Please Login/SignUp directly to proceed further.`);
       };
 
       const onFailLogin = (error = {}) => {
-        alert(
+        showAlert(
           `Error.\n\n${
             // JSON.parse(JSON.stringify(err)).code == '401'
             //   ? 'Invalid User Name or Password.'
             //   : JSON.parse(JSON.stringify(err)).info.errors[0]
             'Invalid User Name or Password.'
           }`,
+          'Login Error',
         );
       };
 
@@ -122,35 +127,75 @@ Please Login/SignUp directly to proceed further.`);
         (this.state.register.password.length < 8 &&
           this.state.register.fullName.length < 4)
       ) {
-        alert(`Please enter A Valid Details for Registration
+        showAlert(
+          `Please enter A Valid Details for Registration
 Full Name: Min 4 Characters
 Login Name: Mail Address
 (Ex: abc@def.xyz)
-Password: Min 8 Characters`);
+Password: Min 8 Characters`,
+          'Invalid Input',
+        );
       } else if (!this.validLoginName(this.state.register.loginName)) {
-        alert(`Enter A Valid Login Name
-(Ex: abc@def.xyz)`);
+        showAlert(
+          `Enter A Valid Login Name
+(Ex: abc@def.xyz)`,
+          'Invalid Input',
+        );
       } else if (this.state.register.fullName.length < 4) {
-        alert('Enter A Valid Full Name. Min 4 characters');
+        showAlert('Enter A Valid Full Name. Min 4 characters', 'Invalid Input');
       } else if (this.state.register.password.length < 8) {
-        alert('Enter A Valid Password. Min 8 characters');
+        showAlert('Enter A Valid Password. Min 8 characters', 'Invalid Input');
       } else {
-        alert(`Please enter A Valid Details for Registration
+        showAlert(
+          `Please enter A Valid Details for Registration
 Full Name: Min 4 Characters
 Login Name: Mail Address
 (Ex: abc@def.xyz)
-Password: Min 8 Characters`);
+Password: Min 8 Characters`,
+          'Invalid Input',
+        );
       }
     } else {
-      alert(
-        this.state.register.fullName +
-          ' -- ' +
-          this.state.register.loginName +
-          ' -- ' +
-          this.state.register.password +
-          ' -- ' +
-          this.state.register.confirmPassword,
-      );
+      if (
+        this.state.register.password !== this.state.register.confirmPassword
+      ) {
+        showAlert("Passwords doesn't match", 'Invalid Input');
+      } else {
+        // alert(
+        //   this.state.register.fullName +
+        //     ' -- ' +
+        //     this.state.register.loginName +
+        //     ' -- ' +
+        //     this.state.register.password +
+        //     ' -- ' +
+        //     this.state.register.confirmPassword,
+        // );
+        const dataUser = {
+          full_name: this.state.register.fullName,
+          login: this.state.register.loginName,
+          email: this.state.register.loginName,
+          password: this.state.register.password,
+        };
+        AuthService.register(dataUser)
+          .then(() => {
+            this.setState({isLoader: false});
+            showAlert('Account successfully registered');
+            navigation.navigate('Dialogs');
+            const {navigation} = this.props;
+            const opponentsIds = [];
+            const currentUserLoginId = dataUser.login;
+            const currentUserFullName = dataUser.full_name;
+            navigation.push('VideoScreen', {
+              opponentsIds,
+              currentUserLoginId,
+              currentUserFullName,
+            });
+          })
+          .catch(error => {
+            this.setState({isLoader: false});
+            showAlert(`Error.\n\n${JSON.stringify(error)}`, 'Error');
+          });
+      }
     }
   };
 
