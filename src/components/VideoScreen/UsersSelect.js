@@ -35,13 +35,13 @@ export default ({
   const colors = [
     '#177987',
     '#a5e900',
-    '#5eba7d',
-    '#3aad85',
-    '#00a587',
-    '#ff4e8f',
-    '#ff005e',
-    '#00abfe',
-    '#53aaf0',
+    // '#5eba7d',
+    // '#3aad85',
+    // '#00a587',
+    // '#ff4e8f',
+    // '#ff005e',
+    // '#00abfe',
+    // '#53aaf0',
     '#860000',
     '#fd5a15',
     '#b400fe',
@@ -128,7 +128,7 @@ export default ({
         />
         <TouchableOpacity
           style={styles.searchButton(
-            checkValidLoginName() ? '#ff7600' : 'grey',
+            checkValidLoginName() ? '#177987' : 'grey',
           )}
           onPress={() => findContact(searchValue)}>
           <Text style={styles.searchText}>{'Search'}</Text>
@@ -238,14 +238,14 @@ const styles = StyleSheet.create({
     color: 'white',
     paddingVertical: 5,
     borderBottomWidth: 1,
-    borderColor: '#ff7600',
+    borderColor: '#177987',
   },
   description: {
     width: SIZE_SCREEN.width - 110,
   },
   descriptionText: {
     paddingVertical: 5,
-    color: '#ff7600',
+    color: '#177987',
     fontSize: 15,
     marginTop: 25,
   },

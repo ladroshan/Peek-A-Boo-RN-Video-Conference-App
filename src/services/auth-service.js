@@ -48,7 +48,7 @@ export default class AuthService {
   register = async user => {
     await ConnectyCube.createSession();
     await ConnectyCube.users.signup(user);
-    return this.login(user);
+    // return this.login(user);
   };
 
   logout = () => {

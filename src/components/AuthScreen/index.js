@@ -180,7 +180,6 @@ Password: Min 8 Characters`,
           .then(() => {
             this.setState({isLoader: false});
             showAlert('Account successfully registered');
-            navigation.navigate('Dialogs');
             const {navigation} = this.props;
             const opponentsIds = [];
             const currentUserLoginId = dataUser.login;
@@ -224,7 +223,7 @@ Password: Min 8 Characters`,
             ]}>
             {isLogging && <Text>Connecting... </Text>}
             {!isLogging && <Text style={[styles.titleText]}>Peek-A-Boo</Text>}
-            {isLogging && <ActivityIndicator size="small" color="#1198d4" />}
+            {isLogging && <ActivityIndicator size="small" color="white" />}
           </View>
         </SafeAreaView>
         <SafeAreaView style={[styles.authBtns, styles.f1]}>
@@ -279,7 +278,7 @@ Password: Min 8 Characters`,
                       login: {...this.state.login, loginName: keyword},
                     })
                   }
-                  placeholderTextColor="grey"
+                  placeholderTextColor="white"
                   // value={searchValue}
                   maxLength={255}
                 />
@@ -296,7 +295,7 @@ Password: Min 8 Characters`,
                       login: {...this.state.login, password: keyword},
                     })
                   }
-                  placeholderTextColor="grey"
+                  placeholderTextColor="white"
                   // value={searchValue}
                   maxLength={255}
                 />
@@ -344,7 +343,7 @@ Password: Min 8 Characters`,
                       register: {...this.state.register, fullName: keyword},
                     })
                   }
-                  placeholderTextColor="grey"
+                  placeholderTextColor="white"
                   maxLength={255}
                 />
               </View>
@@ -352,14 +351,14 @@ Password: Min 8 Characters`,
                 <TextInput
                   style={[styles.searchInput]}
                   autoCapitalize="none"
-                  placeholder="Login name(Email Address)"
+                  placeholder="Login name (Email Address)"
                   returnKeyType="search"
                   onChangeText={keyword =>
                     this.setState({
                       register: {...this.state.register, loginName: keyword},
                     })
                   }
-                  placeholderTextColor="grey"
+                  placeholderTextColor="white"
                   maxLength={255}
                 />
               </View>
@@ -375,12 +374,12 @@ Password: Min 8 Characters`,
                       register: {...this.state.register, password: keyword},
                     })
                   }
-                  placeholderTextColor="grey"
+                  placeholderTextColor="white"
                   maxLength={255}
                 />
                 <TouchableOpacity
                   style={[styles.passIcon]}
-                  onPress={() => this.passViewLogin()}>
+                  onPress={() => this.passViewRegister()}>
                   <Image
                     style={[styles.passImg]}
                     source={
@@ -407,7 +406,7 @@ Password: Min 8 Characters`,
                       },
                     })
                   }
-                  placeholderTextColor="grey"
+                  placeholderTextColor="white"
                   maxLength={255}
                 />
                 {/* <TouchableOpacity
@@ -499,7 +498,7 @@ const styles = StyleSheet.create({
   formHead: {
     fontSize: 30,
     fontWeight: '700',
-    color: 'black',
+    color: 'white',
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -513,20 +512,20 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     fontSize: 18,
-    color: 'black',
+    color: 'white',
     paddingVertical: 5,
     borderBottomWidth: 1,
-    borderColor: 'grey',
+    borderColor: 'white',
   },
   passIcon: {
     position: 'absolute',
-    right: 10,
+    right: 5,
     marginTop: -25,
-    height: 20,
-    width: 30,
-  },
-  passImg: {
     height: 25,
     width: 35,
+  },
+  passImg: {
+    height: 20,
+    width: 30,
   },
 });
